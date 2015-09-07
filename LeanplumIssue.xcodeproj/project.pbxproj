@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		303C7ACCD3EA08EE502AB966 /* libPods-LeanplumIssue.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DD0271AD6D4BD8B028403CD3 /* libPods-LeanplumIssue.a */; };
+		514450231B9DE3C10069B3A7 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 514450221B9DE3C10069B3A7 /* MapKit.framework */; };
 		518E9CEE1B9DE189009C79CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518E9CED1B9DE189009C79CA /* AppDelegate.swift */; };
 		518E9CF11B9DE189009C79CA /* LeanplumIssue.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 518E9CEF1B9DE189009C79CA /* LeanplumIssue.xcdatamodeld */; };
 		518E9CF31B9DE189009C79CA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518E9CF21B9DE189009C79CA /* ViewController.swift */; };
@@ -27,6 +29,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2A5C1B53578118A82231F6DE /* Pods-LeanplumIssue.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LeanplumIssue.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LeanplumIssue/Pods-LeanplumIssue.debug.xcconfig"; sourceTree = "<group>"; };
+		514450221B9DE3C10069B3A7 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		518E9CE81B9DE188009C79CA /* LeanplumIssue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeanplumIssue.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		518E9CEC1B9DE189009C79CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		518E9CED1B9DE189009C79CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -38,6 +42,8 @@
 		518E9D001B9DE189009C79CA /* LeanplumIssueTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeanplumIssueTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		518E9D051B9DE189009C79CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		518E9D061B9DE189009C79CA /* LeanplumIssueTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeanplumIssueTests.swift; sourceTree = "<group>"; };
+		70FC5478A04140904C49C60A /* Pods-LeanplumIssue.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LeanplumIssue.release.xcconfig"; path = "Pods/Target Support Files/Pods-LeanplumIssue/Pods-LeanplumIssue.release.xcconfig"; sourceTree = "<group>"; };
+		DD0271AD6D4BD8B028403CD3 /* libPods-LeanplumIssue.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LeanplumIssue.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +51,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				514450231B9DE3C10069B3A7 /* MapKit.framework in Frameworks */,
+				303C7ACCD3EA08EE502AB966 /* libPods-LeanplumIssue.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +72,8 @@
 				518E9CEA1B9DE188009C79CA /* LeanplumIssue */,
 				518E9D031B9DE189009C79CA /* LeanplumIssueTests */,
 				518E9CE91B9DE188009C79CA /* Products */,
+				597AECC7DA164944288875F3 /* Pods */,
+				848A3D942198807CF0E76AAB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -115,6 +125,24 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		597AECC7DA164944288875F3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2A5C1B53578118A82231F6DE /* Pods-LeanplumIssue.debug.xcconfig */,
+				70FC5478A04140904C49C60A /* Pods-LeanplumIssue.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		848A3D942198807CF0E76AAB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				514450221B9DE3C10069B3A7 /* MapKit.framework */,
+				DD0271AD6D4BD8B028403CD3 /* libPods-LeanplumIssue.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -122,9 +150,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 518E9D0A1B9DE189009C79CA /* Build configuration list for PBXNativeTarget "LeanplumIssue" */;
 			buildPhases = (
+				A3BCC6DECC2FAC4C100E8726 /* Check Pods Manifest.lock */,
 				518E9CE41B9DE188009C79CA /* Sources */,
 				518E9CE51B9DE188009C79CA /* Frameworks */,
 				518E9CE61B9DE188009C79CA /* Resources */,
+				410B823D98C19758C99A666A /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -209,6 +239,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		410B823D98C19758C99A666A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LeanplumIssue/Pods-LeanplumIssue-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A3BCC6DECC2FAC4C100E8726 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		518E9CE41B9DE188009C79CA /* Sources */ = {
@@ -344,6 +407,7 @@
 		};
 		518E9D0B1B9DE189009C79CA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A5C1B53578118A82231F6DE /* Pods-LeanplumIssue.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LeanplumIssue/Info.plist;
@@ -354,6 +418,7 @@
 		};
 		518E9D0C1B9DE189009C79CA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70FC5478A04140904C49C60A /* Pods-LeanplumIssue.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LeanplumIssue/Info.plist;
@@ -415,6 +480,7 @@
 				518E9D0C1B9DE189009C79CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		518E9D0D1B9DE189009C79CA /* Build configuration list for PBXNativeTarget "LeanplumIssueTests" */ = {
 			isa = XCConfigurationList;
@@ -423,6 +489,7 @@
 				518E9D0F1B9DE189009C79CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

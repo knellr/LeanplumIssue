@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreData
+import Leanplum
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,7 +17,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        Leanplum.setAppId("app_AB8f5vQfvXhcLvkO227vbAB0GQn7phcoEjIEsKdsvJ0", withDevelopmentKey: "dev_dXH1cTTfDj4CplSUc66oGpvimlALjAXU1YgKjPdSvmQ")
+        Leanplum.syncResourcePaths(["nonExistentPath"], excluding: [], async: true)
+        Leanplum.start()
+        
         return true
     }
 
